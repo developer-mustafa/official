@@ -740,7 +740,8 @@ footer i{
         font-size: 4rem;
     }
     .home img{
-        width: 40vw;
+        width: 25rem;
+        height: 25rem;
     }
     .about{
         flex-direction: column;
