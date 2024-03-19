@@ -125,7 +125,7 @@ section {
   font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 0.7px #ff00ee;
-  background: linear-gradient(#ff00ee, #ff00ee);
+  background: linear-gradient(#271e26, #ff00ee);
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-position: -33rem 0;
@@ -194,13 +194,19 @@ section {
   }
 }
 .btn-section {
-  width: 32.5rem;
+  width: 42.5rem;
   height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 2rem 0;
   position: relative;
+  gap:10px;
+}
+.btn-section button a:hover{
+  text-decoration: none;
+  color:white;
+
 }
 .btn-section::before {
   content: "";
@@ -299,15 +305,18 @@ i:hover::after {
   top: 0;
 }
 .home img {
-  width: 30rem;
   height: 30rem;
   background: rgba(255, 255, 255, 0.1);
   border: 0.2rem solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
+  border-radius: 10px 10px  85px 85px;
   filter: drop-shadow(0 0 8rem #ff00ee);
   animation: Scale 1s ease forwards;
   scale: 0;
   animation-delay: 2s;
+  -webkit-border-radius: 10px 10px  85px 85px;
+  -moz-border-radius: 10px 10px  85px 85px;
+  -ms-border-radius: 10px 10px  85px 85px;
+  -o-border-radius: 10px 10px  85px 85px;
 }
 @keyframes Scale {
   0% {
@@ -351,13 +360,17 @@ section.start-animation .title {
   color: #ff00ee;
 }
 .about img {
-  height: 25rem;
+  height: 33rem;
   width: 25rem;
   background: rgba(255, 255, 255, 0.1);
   border: 0.2rem solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
+  border-radius: 10px 10px  85px 85px;
   filter: drop-shadow(0 0 8rem #ff00ee);
   scale: 0;
+  -webkit-border-radius: 10px 10px  85px 85px;
+  -moz-border-radius: 10px 10px  85px 85px;
+  -ms-border-radius: 10px 10px  85px 85px;
+  -o-border-radius: 10px 10px  85px 85px;
 }
 section.start-animation .aboutImg {
   animation: scaleout 1s ease forwards;
@@ -492,10 +505,10 @@ section.start-animation .column h2 {
 }
 .content .year {
   font-size: 1.5rem;
-  color: #ff00ee;
+  color:#f1fb98;
 }
 .content .year i {
-  color: #ff00ee;
+  color: #8af76b;
   font-size: 1.5rem;
   margin-left: 0.5rem;
 }
@@ -743,15 +756,16 @@ footer i {
     font-size: 4rem;
   }
   .home img {
-    width: 25rem;
     height: 25rem;
+    width: 22rem;
+    
   }
   .about {
     flex-direction: column;
   }
   .about img {
-    width: 20rem;
-    height: 20rem;
+    height: 25rem;
+  width: 22rem;
   }
 }
 @media (max-width: 450px) {
@@ -772,4 +786,52 @@ footer i {
 .content h3:hover,
 a:hover {
   color: #fa21eb;
+}
+
+
+.bxl-whatsapp{
+  font-size: 40px;
+}
+
+
+.fnd{
+  font-size: 1.7rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 0.7px #ff00ee;
+  background: linear-gradient(#271e26, #ff00ee);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -33rem 0;
+  transform: translateY(-100px);
+  opacity: 0;
+  animation: textSlide 6s linear infinite, TopSlide 1s ease forwards;
+  animation-delay: 2s, 1.2s;
+}
+
+.about-founder p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+}
+
+
+.sp-title{
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 0.7px #ff00ee;
+  background: linear-gradient(#271e26, #ff00ee);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -33rem 0;
+  transform: translateY(-100px);
+  opacity: 0;
+  animation: textSlide 6s linear infinite, TopSlide 1s ease forwards;
+  animation-delay: 2s, 1.2s;
+}
+
+.learn-more:hover{
+  color: aliceblue;
 }
